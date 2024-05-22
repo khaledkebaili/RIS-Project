@@ -5,7 +5,6 @@ import Loadable from 'ui-component/Loadable';
 import MainLayout from 'layout/MainLayout';
 
 // dashboard routing
-const DashboardDefault = Loadable(lazy(() => import('views/dashboard/Default')));
 const DashboardRIS = Loadable(lazy(() => import('views/DashBoardRIS/MyPatients')));
 
 // utilities routing
@@ -25,17 +24,8 @@ const MainRoutes = {
   element: <MainLayout />,
   children: [
     {
-      path: '/',
-      element: <DashboardDefault />
-    },
-    {
       path: 'dashboard',
-      children: [
-        {
-          path: 'default',
-          element: <DashboardDefault />
-        }
-      ]
+      element: <MenuDashboard />
     },
     {
       path: 'menu',
