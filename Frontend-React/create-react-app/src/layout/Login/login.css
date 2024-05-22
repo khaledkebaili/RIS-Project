@@ -1,0 +1,116 @@
+body, html, #root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .vh-100 {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .img-fluid {
+    max-height: 100vh;
+    object-fit: cover;
+  }
+  
+  .container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .login-form {
+    width: 100%;
+    margin-left: 200px;
+    width: 500px;
+  }
+  
+  .login-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  
+  .login-header {
+    color: #5152BC;
+    font-weight: 800;
+    text-align: center;
+    font-size: 60px;
+  }
+  
+  .login-input {
+    background-color: #EEEEEE;
+    padding-left: 40px;
+    color: black;
+    border-radius: 70px; /* Apply corner radius to inputs */
+    padding-left: 50px;
+    height: 50px;
+    width: 500px;
+
+  }
+  
+  .user-icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+  }
+
+
+  .submit{
+    background-color: #5152BC;
+    color: white;
+    border-radius: 70px;
+    font-size: 25px;
+    font-weight: 800; 
+    height: 50px; 
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .social-icon {
+    width: 40px; /* Adjust the width and height as needed */
+    height: 40px;
+
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between icons as needed */
+    margin-top: 10px; /* Adjust the top margin as needed */
+  }
+  
+
+  .overlay-text {
+    position: absolute;
+    width: 700px;
+    top: 15%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Adjust the text color */
+  }
+  
+  .overlay-text h1 {
+    font-size: 36px; /* Adjust the font size */
+    margin-bottom: 20px; /* Adjust the spacing between the heading and paragraph */
+    font-weight: bold;
+    text-align: center; 
+  }
+  
+  .overlay-text p {
+    font-size: 23px; /* Adjust the font size */
+    text-align:justify;
+    line-height: 1.6;
+  }
