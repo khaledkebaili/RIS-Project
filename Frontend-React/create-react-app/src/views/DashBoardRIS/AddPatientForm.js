@@ -27,7 +27,7 @@ const AddPatientForm = ({ open, onClose }) => {
   };
 
   return (
-    <Dialog open={open} onClose={onClose} maxWidth={false} PaperProps={{ style: { width: '45%' } }}>      
+    <Dialog open={open} onClose={onClose} maxWidth={false} PaperProps={{ style: { width: '46%' } }}>      
       <DialogTitle>
         <Box display="flex" justifyContent="center" alignItems="center">
           <Typography variant="h2">New Patient</Typography>
