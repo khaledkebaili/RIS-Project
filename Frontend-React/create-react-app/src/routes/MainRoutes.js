@@ -9,8 +9,10 @@ const DashboardRIS = Loadable(lazy(() => import('views/DashBoardRIS/MyPatients')
 
 // utilities routing
 const MenuDashboard = Loadable(lazy(() => import('views/DashBoardRIS/Typography')));
+const Diagnostic = Loadable(lazy(() => import('views/DashBoardRIS/Diagnostic')));
 const UtilsColor = Loadable(lazy(() => import('views/DashBoardRIS/Color')));
 const UtilsShadow = Loadable(lazy(() => import('views/DashBoardRIS/Shadow')));
+const PatientDetails = Loadable(lazy(() => import('views/DashBoardRIS/PatientDetails')));
 const UtilsMaterialIcons = Loadable(lazy(() => import('views/DashBoardRIS/MaterialIcons')));
 const UtilsTablerIcons = Loadable(lazy(() => import('views/DashBoardRIS/TablerIcons')));
 
@@ -85,6 +87,14 @@ const MainRoutes = {
     {
       path: 'sample-page',
       element: <SamplePage />
+    },
+    {
+      path: '/patient-details/:patientName',
+      element: <PatientDetails/>
+    },
+    {
+      path: '/patient-details/:patientName/diagnostic/:id',
+      element: <Diagnostic/>
     }
   ]
 };

@@ -1,0 +1,68 @@
+.up-text span {
+    color: #8420B3;
+  }
+  
+  .user-icon {
+    width: 130px; /* Adjust the size as needed */
+    height: 130px; /* Adjust the size as needed */
+  }
+  
+  .card {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 900px;
+    margin-right: 70px;
+  }
+
+  .card p {
+    color: #5152BC;
+    font-weight: 800;
+  }
+
+  .add-button{
+    background-color: white;
+    height: 60px;
+    width: 350px;
+    border: 2px solid #5152BC;
+    border-radius: 20px;
+  }
+
+  .add-button span{
+    color: #5152BC;
+    font-size: 20px;
+  }
+
+  .delete-button{
+    background-color: white;
+    height: 60px;
+    width: 350px;
+    border: 2px solid #FF0000;
+    border-radius: 20px;
+  }
+
+  .delete-button span{
+    color: #FF0000;
+    font-size: 20px;
+  }
+
+  h4 {
+    color: #5152BC;
+    font-weight: 200;
+  }
+
+  .table-header tr th {
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+  }
+  
+  .table-row td {
+    cursor: pointer;
+    background-color: #5152BC;
+    color: #f0f0f0;
+    padding-right: 10px;
+    font-size: 20px;
+    text-align: center;
+  }
+  

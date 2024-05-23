@@ -1,0 +1,32 @@
+.up-text span {
+    color: #8420B3;
+  }
+
+  .delete-button{
+    background-color: white;
+    height: 60px;
+    width: 350px;
+    border: 2px solid #FF0000;
+    border-radius: 20px;
+  }
+
+  .delete-button span{
+    color: #FF0000;
+    font-size: 20px;
+  }
+  .card{
+
+    text-align: center;
+  }
+
+  .card p{
+    margin-right: 100px;
+    font-size: 20px;
+    font-weight: 800;
+
+  }
+  .card span{
+    font-size: 20px;
+    font-weight: 400;
+    color: #5152BC;
+  }

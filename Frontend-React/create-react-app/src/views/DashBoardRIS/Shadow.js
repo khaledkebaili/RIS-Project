@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { Box, Card, Grid, TextField, Button } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 const PatientsPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
+  const navigate = useNavigate();
+
   const patients = [
     { name: 'Helmi Hnich', date: '25/05/2024', appointmentDate: '01/06/2024', appointments: 2 },
     { name: 'Firas Hajlaoui', date: '29/05/2024', appointmentDate: '05/06/2024', appointments: 1 },
@@ -15,6 +18,11 @@ const PatientsPage = () => {
 
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
+  };
+
+  const handleView = (patientName) => {
+    // Replace 'patient-details' with your target route
+    navigate(`/patient-details/${patientName}`);
   };
 
   return (
@@ -64,11 +72,16 @@ const PatientsPage = () => {
                             </Grid>
                             <Grid item>
                               <Box display="flex" flexDirection="column" alignItems="flex-end">
-                                <Button variant="contained" color="primary" style={{ marginBottom: '8px' }}>
+                                <Button
+                                  variant="contained"
+                                  color="primary"
+                                  style={{ marginBottom: '8px' }}
+                                  onClick={() => handleView(patient.name)}
+                                >
                                   View
                                 </Button>
                                 <Button variant="contained" color="secondary">
-                                  delete
+                                  Delete
                                 </Button>
                               </Box>
                             </Grid>
