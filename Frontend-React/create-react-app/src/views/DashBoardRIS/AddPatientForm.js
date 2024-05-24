@@ -27,7 +27,7 @@ const AddPatientForm = ({ open, onClose }) => {
   };
 
   return (
-    <Dialog open={open} onClose={onClose} maxWidth={false} PaperProps={{ style: { width: '45%' } }}>      
+    <Dialog open={open} onClose={onClose} maxWidth={false} PaperProps={{ style: { width: '40%' } }}>      
       <DialogTitle>
         <Box display="flex" justifyContent="center" alignItems="center">
           <Typography variant="h2">New Patient</Typography>
@@ -148,7 +148,7 @@ const AddPatientForm = ({ open, onClose }) => {
           </Grid>
           <Grid item xs={12}>
             <Box display="flex" justifyContent="center" mt={2}>
-              <Button variant="contained" color="primary" onClick={handleAdd} style={{ backgroundColor: '#4CAF50' }}>
+              <Button variant="contained" color="primary" onClick={handleAdd} style={{ backgroundColor: '#3CD42F' }}>
                 ADD
               </Button>
             </Box>
